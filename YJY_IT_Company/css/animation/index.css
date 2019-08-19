@@ -1,0 +1,45 @@
+.display_container{
+    position:relative;
+    animation-delay:10s;
+    animation-iteration-count: 1;
+    animation:mymove 2s infinite;
+    -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+    animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    /* Safari 和 Chrome */
+    -webkit-animation-delay:10s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation:mymove 5s infinite;
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+}
+@keyframes mymove
+{
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+}
